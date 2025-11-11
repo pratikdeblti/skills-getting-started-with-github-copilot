@@ -35,10 +35,23 @@
               <!-- Activity options will be loaded here -->
             </select>
           </div>
-          <button type="submit">Sign Up</button>
+          <button type="submit" id="signup-button"><span class="spinner hidden" aria-hidden="true"></span>Sign Up</button>
         </form>
         <div id="message" class="hidden"></div>
       </section>
+
+    <!-- Confirmation modal -->
+    <div id="confirm-modal" class="hidden" role="dialog" aria-modal="true" aria-labelledby="confirm-modal-title">
+      <div class="confirm-modal-backdrop"></div>
+      <div class="confirm-modal-content">
+        <h4 id="confirm-modal-title">Please confirm</h4>
+        <p id="confirm-modal-message"></p>
+        <div class="confirm-modal-actions">
+          <button id="confirm-no">Cancel</button>
+          <button id="confirm-yes">Unregister</button>
+        </div>
+      </div>
+    </div>
     </main>
 
     <footer>
