@@ -142,3 +142,53 @@ footer {
   padding: 20px;
   color: #666;
 }
+
+.participants {
+  margin-top: 12px;
+}
+
+.participants strong {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Bulleted, scrollable participants list with subtle "card" list items */
+.participants-list {
+  list-style: disc;
+  padding-left: 1.25rem; /* show bullets */
+  margin: 0;
+  display: block;
+  max-height: 9rem; /* keep compact but scrollable */
+  overflow-y: auto;
+  gap: 6px;
+}
+
+.participants-list li {
+  background: #ffffff;
+  margin: 6px 0;
+  padding: 8px 10px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  color: #0f2b66;
+  border: 1px solid rgba(26, 35, 126, 0.06);
+  box-shadow: 0 1px 2px rgba(15, 43, 102, 0.03);
+  line-height: 1.3;
+}
+
+/* Make the list marker a matching accent color */
+.participants-list li::marker {
+  color: #3949ab;
+  font-size: 1.05em;
+}
+
+.participants-empty {
+  color: #666;
+  font-size: 0.95rem;
+  background: #fafafa;
+  padding: 6px 10px;
+  border-radius: 6px;
+  display: inline-block;
+  border: 1px solid #eee;
+}
